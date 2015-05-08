@@ -19,7 +19,7 @@ describe ('GitUserSearchController', function() {
 
       var httpBackend;
       beforeEach(inject(function($httpBackend) {
-        httpBackend = $httpBackend
+        httpBackend = $httpBackend;
         httpBackend
           .when("GET", "https://api.github.com/search/users?q=hello")
           .respond(
